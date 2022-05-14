@@ -6,6 +6,7 @@ scalaVersion := "2.12.15"
 val akkaVersion = "2.5.20"
 val akkaHttpVersion = "10.1.7"
 val scalaTestVersion = "3.2.11"
+val sparkVersion = "2.4.5"
 
 libraryDependencies ++= Seq(
   // akka streams
@@ -21,7 +22,18 @@ libraryDependencies ++= Seq(
   // JWT
   "com.pauldijou" %% "jwt-spray-json" % "2.1.0",
   //mysql
-  "mysql" % "mysql-connector-java" % "8.0.29"
+  "mysql" % "mysql-connector-java" % "8.0.29",
+  "org.json4s" %% "json4s-native" % "4.0.5",
+  "org.json4s" %% "json4s-jackson" % "4.0.5"
+
+
+  //  "org.apache.spark" %% "spark-core" % sparkVersion,
+//  "org.apache.spark" %% "spark-sql" % sparkVersion,
+//
+////  "org.scalatest" % "scalatest-core_2.12" % "3.2.11",
+//  "org.json4s" %% "json4s-core" % "3.5.3",
+//  "org.scala-lang.modules" % "scala-xml_2.12" % "1.0.6"
+
 
 
 )

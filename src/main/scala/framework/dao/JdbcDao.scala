@@ -1,25 +1,38 @@
 package framework.dao
 
 import java.sql.{Connection, DriverManager}
+import org.json4s._
+import org.json4s.native.JsonMethods.compact
+import org.json4s.native.Serialization._
+import org.json4s.native.Serialization
+import org.json4s._
+import org.json4s.JsonDSL._
+import org.json4s.jackson.JsonMethods._
+import spray.json.DefaultJsonProtocol.seqFormat
+import spray.json.enrichAny
+
+import scala.collection.mutable.Map
 
 class JdbcDao {
-  def historicRead(stock: String): Unit ={
+  def historicRead(stock: String): String ={
     val url = "jdbc:mysql://localhost:3306/testschema"
     val driver = "com.mysql.cj.jdbc.Driver"
     val username = "root"
     val password = "password"
     var connection: Connection = null
+    var data: String = ""
     try {
       Class.forName(driver)
       connection = DriverManager.getConnection(url, username, password)
       val statement = connection.createStatement
-      val rs = statement.executeQuery(s"select * from stockhistory a inner join stock b on a.stockid = b.stockid where stockname = '$stock'")
+      val rs = statement.executeQuery(s"select * from stockhistory a inner join stock b on a.stockid = b.stockid where stockname = '$stock' and date BETWEEN DATE_SUB(NOW(), INTERVAL 3 DAY) AND NOW()")
       while (rs.next) {
-        println(s"${rs.getString("stockname")}   ${rs.getString("price")}   ${rs.getString("date")}   ")
+        data = data + s"${rs.getString("stockname")}, ${rs.getString("price")}, ${rs.getString("date")} \n"
       }
     } catch {
       case e: Exception => e.printStackTrace
     }
     connection.close
+    data
   }
 }

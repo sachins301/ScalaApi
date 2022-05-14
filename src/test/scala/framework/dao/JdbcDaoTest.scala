@@ -8,14 +8,13 @@ class JdbcDaoTest extends AnyFunSuite with MockFactory {
   test("Infra test") {
     assert(true)
   }
-//  test("jdbc"){
-//    val mockJdbc = mock[JdbcDao]
-//
-//    inAnyOrder{
-//      (mockJdbc.historicRead _) expects("ibm") returning("test") once()
-//    }
-//
-//
-//
-//  }
+  test("jdbc"){
+    val mockJdbc = mock[JdbcDao]
+
+    inAnyOrder{
+      (mockJdbc.historicRead _) expects("ibm") returning("test") once()
+    }
+    assert(mockJdbc.historicRead("ibm") == ())
+
+  }
 }

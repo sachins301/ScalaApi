@@ -4,8 +4,8 @@
 [debug] > Exec(onFailure loadFailed, None, None)
 [debug] > Exec(loadp, None, None)
 [info] welcome to sbt 1.6.2 (Oracle Corporation Java 18.0.1.1)
-[debug]       Load.loadUnit: plugins took 62.5727ms
-[debug]       Load.loadUnit: defsScala took 0.0623ms
+[debug]       Load.loadUnit: plugins took 31.4679ms
+[debug]       Load.loadUnit: defsScala took 0.004ms
 [debug] [Loading] Scanning directory C:\Users\sachi\.sbt\1.0\plugins
 [debug] [Loading] Found non-root projects 
 [debug] [Loading] Done in C:\Users\sachi\.sbt\1.0\plugins, returning: ()
@@ -22,28 +22,27 @@
 [debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
 [debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
 [debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
-[debug] Plugins.deducer#function took 5.0397 ms
-[debug]           Load.resolveProject(global-plugins) took 8.7873ms
-[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\sachi\.sbt\1.0\plugins, plugins: List(<none>))) took 16.9523ms
+[debug] Plugins.deducer#function took 1.8956 ms
+[debug]           Load.resolveProject(global-plugins) took 2.3605ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\sachi\.sbt\1.0\plugins, plugins: List(<none>))) took 5.1469ms
 [debug] [Loading] Done in C:\Users\sachi\.sbt\1.0\plugins, returning: (global-plugins)
-[debug]       Load.loadUnit: loadedProjectsRaw took 23.507ms
-[debug]       Load.loadUnit: cleanEvalClasses took 0.0318ms
-[debug]     Load.loadUnit(file:/C:/Users/sachi/.sbt/1.0/plugins/, ...) took 90.3096ms
-[debug]   Load.apply: load took 95.8843ms
-[debug]   Load.apply: resolveProjects took 1.6718ms
-[debug]   Load.apply: finalTransforms took 16.5012ms
-[debug]   Load.apply: config.delegates took 1.1652ms
-[debug]   Load.apply: Def.make(settings)... took 95.6963ms
-[debug]   Load.apply: structureIndex took 16.8143ms
-[debug]   Load.apply: mkStreams took 0.1033ms
+[debug]       Load.loadUnit: loadedProjectsRaw took 6.7148ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.0083ms
+[debug]     Load.loadUnit(file:/C:/Users/sachi/.sbt/1.0/plugins/, ...) took 39.5901ms
+[debug]   Load.apply: load took 41.615ms
+[debug]   Load.apply: resolveProjects took 0.2317ms
+[debug]   Load.apply: finalTransforms took 6.1867ms
+[debug]   Load.apply: config.delegates took 0.419ms
+[debug]   Load.apply: Def.make(settings)... took 31.3917ms
+[debug]   Load.apply: structureIndex took 10.6898ms
+[debug]   Load.apply: mkStreams took 0.0078ms
 [info] loading global plugins from C:\Users\sachi\.sbt\1.0\plugins
 [debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
-[debug] Forcing garbage collection...
-[debug] Load.defaultLoad until apply took 1307.1729ms
-[debug]           Load.loadUnit: plugins took 30.6565ms
-[debug]           Load.loadUnit: defsScala took 0.0032ms
+[debug] Load.defaultLoad until apply took 193.8588ms
+[debug]           Load.loadUnit: plugins took 15.7554ms
+[debug]           Load.loadUnit: defsScala took 0.0017ms
 [debug] [Loading] Scanning directory C:\Users\sachi\IdeaProjects\ScalaApi\project
-[debug]             Load.loadUnit: mkEval took 0.2587ms
+[debug]             Load.loadUnit: mkEval took 0.1312ms
 [debug] [Loading] Found non-root projects 
 [debug] [Loading] Done in C:\Users\sachi\IdeaProjects\ScalaApi\project, returning: ()
 [debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
@@ -59,27 +58,27 @@
 [debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
 [debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
 [debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
-[debug] Plugins.deducer#function took 1.2382 ms
+[debug] Plugins.deducer#function took 0.4203 ms
 [info] loading settings for project scalaapi-build from idea1.sbt ...
-[debug]               Load.resolveProject(scalaapi-build) took 1.954ms
-[debug]             Load.loadTransitive: finalizeProject(Project(id scalaapi-build, base: C:\Users\sachi\IdeaProjects\ScalaApi\project, plugins: List(<none>))) took 3.598ms
+[debug]               Load.resolveProject(scalaapi-build) took 4.335ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id scalaapi-build, base: C:\Users\sachi\IdeaProjects\ScalaApi\project, plugins: List(<none>))) took 4.9221ms
 [debug] [Loading] Done in C:\Users\sachi\IdeaProjects\ScalaApi\project, returning: (scalaapi-build)
-[debug]           Load.loadUnit: loadedProjectsRaw took 36.6262ms
-[debug]           Load.loadUnit: cleanEvalClasses took 5.0173ms
-[debug]         Load.loadUnit(file:/C:/Users/sachi/IdeaProjects/ScalaApi/project/, ...) took 72.9521ms
-[debug]       Load.apply: load took 74.416ms
-[debug]       Load.apply: resolveProjects took 0.1531ms
-[debug]       Load.apply: finalTransforms took 7.8208ms
-[debug]       Load.apply: config.delegates took 0.3067ms
-[debug]       Load.apply: Def.make(settings)... took 42.8165ms
-[debug]       Load.apply: structureIndex took 32.34ms
-[debug]       Load.apply: mkStreams took 0.0048ms
+[debug]           Load.loadUnit: loadedProjectsRaw took 22.51ms
+[debug]           Load.loadUnit: cleanEvalClasses took 2.8324ms
+[debug]         Load.loadUnit(file:/C:/Users/sachi/IdeaProjects/ScalaApi/project/, ...) took 41.6158ms
+[debug]       Load.apply: load took 42.1946ms
+[debug]       Load.apply: resolveProjects took 0.0591ms
+[debug]       Load.apply: finalTransforms took 2.5506ms
+[debug]       Load.apply: config.delegates took 0.095ms
+[debug]       Load.apply: Def.make(settings)... took 19.9285ms
+[debug]       Load.apply: structureIndex took 6.5916ms
+[debug]       Load.apply: mkStreams took 0.0018ms
 [info] loading project definition from C:\Users\sachi\IdeaProjects\ScalaApi\project
 [debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
-[debug]     Load.loadUnit: plugins took 351.5251ms
-[debug]     Load.loadUnit: defsScala took 0.0043ms
+[debug]     Load.loadUnit: plugins took 136.204ms
+[debug]     Load.loadUnit: defsScala took 0.0014ms
 [debug] [Loading] Scanning directory C:\Users\sachi\IdeaProjects\ScalaApi
-[debug]       Load.loadUnit: mkEval took 0.5335ms
+[debug]       Load.loadUnit: mkEval took 0.1314ms
 [debug] [Loading] Found non-root projects 
 [debug] [Loading] Done in C:\Users\sachi\IdeaProjects\ScalaApi, returning: ()
 [debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
@@ -101,21 +100,21 @@
 [debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
 [debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
 [debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
-[debug] Plugins.deducer#function took 1.2094 ms
+[debug] Plugins.deducer#function took 0.5384 ms
 [info] loading settings for project scalaapi from build.sbt ...
-[debug]         Load.resolveProject(scalaapi) took 31.6108ms
-[debug]       Load.loadTransitive: finalizeProject(Project(id scalaapi, base: C:\Users\sachi\IdeaProjects\ScalaApi, plugins: List(<none>))) took 33.1831ms
+[debug]         Load.resolveProject(scalaapi) took 21.8381ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id scalaapi, base: C:\Users\sachi\IdeaProjects\ScalaApi, plugins: List(<none>))) took 22.6854ms
 [debug] [Loading] Done in C:\Users\sachi\IdeaProjects\ScalaApi, returning: (scalaapi)
-[debug]     Load.loadUnit: loadedProjectsRaw took 573.5607ms
-[debug]     Load.loadUnit: cleanEvalClasses took 21.6856ms
-[debug]   Load.loadUnit(file:/C:/Users/sachi/IdeaProjects/ScalaApi/, ...) took 947.6031ms
-[debug] Load.apply: load took 948.5748ms
-[debug] Load.apply: resolveProjects took 0.0666ms
-[debug] Load.apply: finalTransforms took 9.0346ms
-[debug] Load.apply: config.delegates took 0.1181ms
-[debug] Load.apply: Def.make(settings)... took 30.7169ms
-[debug] Load.apply: structureIndex took 16.652ms
-[debug] Load.apply: mkStreams took 0.0029ms
+[debug]     Load.loadUnit: loadedProjectsRaw took 631.0876ms
+[debug]     Load.loadUnit: cleanEvalClasses took 16.5584ms
+[debug]   Load.loadUnit(file:/C:/Users/sachi/IdeaProjects/ScalaApi/, ...) took 784.3342ms
+[debug] Load.apply: load took 785.1263ms
+[debug] Load.apply: resolveProjects took 0.0952ms
+[debug] Load.apply: finalTransforms took 10.3974ms
+[debug] Load.apply: config.delegates took 0.1144ms
+[debug] Load.apply: Def.make(settings)... took 27.2207ms
+[debug] Load.apply: structureIndex took 10.7416ms
+[debug] Load.apply: mkStreams took 0.0041ms
 [warn] Discarding 1 session setting.  Use 'session save' to persist session settings.
 [info] set current project to ScalaApi (in build file:/C:/Users/sachi/IdeaProjects/ScalaApi/)
 [debug] > Exec(sbtPopOnFailure, None, None)
@@ -137,7 +136,7 @@
 [debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
 [info] Writing structure to C:\Users\sachi\AppData\Local\Temp\sbt-structure.xml...
 [info] Done.
-[success] Total time: 4 s, completed 14-May-2022, 3:21:26 pm
+[success] Total time: 5 s, completed 14-May-2022, 4:24:51 pm
 [debug] > Exec(session clear-all, None, None)
 [info] Reapplying settings...
 [info] set current project to ScalaApi (in build file:/C:/Users/sachi/IdeaProjects/ScalaApi/)

@@ -12,10 +12,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-annotations:2.12.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-core:2.12.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-databind:2.12.6.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java:3.19.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.pauldijou:jwt-core_2.12:2.1.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.pauldijou:jwt-json-common_2.12:2.1.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.pauldijou:jwt-spray-json_2.12:2.1.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.thoughtworks.paranamer:paranamer:2.8:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor_2.12:2.5.20:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-http-core_2.12:10.1.7:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-http-spray-json_2.12:10.1.7:jar" level="project" />
@@ -31,6 +35,13 @@
     <orderEntry type="library" name="sbt: mysql:mysql-connector-java:8.0.29:jar" level="project" />
     <orderEntry type="library" name="sbt: org.bouncycastle:bcpkix-jdk15on:1.60:jar" level="project" />
     <orderEntry type="library" name="sbt: org.bouncycastle:bcprov-jdk15on:1.60:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-ast_2.12:4.0.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-core_2.12:4.0.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-jackson-core_2.12:4.0.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-jackson_2.12:4.0.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-native-core_2.12:4.0.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-native_2.12:4.0.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-scalap_2.12:4.0.5:jar" level="project" />
     <orderEntry type="library" name="sbt: org.reactivestreams:reactive-streams:1.0.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.12:0.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-parser-combinators_2.12:1.1.1:jar" level="project" />

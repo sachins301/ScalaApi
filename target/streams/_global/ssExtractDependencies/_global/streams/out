@@ -1,39 +1,13 @@
-[error] sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-http_2.13:10.1.7
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-http_2.13\10.1.7\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.7/akka-http_2.13-10.1.7.pom
-[error] Error downloading com.typesafe.akka:akka-http-spray-json_2.13:10.1.7
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-http-spray-json_2.13\10.1.7\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.7/akka-http-spray-json_2.13-10.1.7.pom
-[error] Error downloading com.pauldijou:jwt-spray-json_2.13:2.1.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.pauldijou\jwt-spray-json_2.13\2.1.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/pauldijou/jwt-spray-json_2.13/2.1.0/jwt-spray-json_2.13-2.1.0.pom
-[error] Error downloading com.typesafe.akka:akka-stream_2.13:2.5.20
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-stream_2.13\2.5.20\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.5.20/akka-stream_2.13-2.5.20.pom
-[error] Error downloading com.typesafe.akka:akka-testkit_2.13:2.5.20
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-testkit_2.13\2.5.20\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.5.20/akka-testkit_2.13-2.5.20.pom
-[error] Error downloading com.typesafe.akka:akka-http-testkit_2.13:10.1.7
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-http-testkit_2.13\10.1.7\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_2.13/10.1.7/akka-http-testkit_2.13-10.1.7.pom
-[error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:345)
-[error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:314)
-[error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
-[error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:314)
-[error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
-[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)
+[error] java.lang.RuntimeException: found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
+[error] 
+[error] 	* org.scala-lang.modules:scala-xml_2.12:2.0.1 (early-semver) is selected over 1.0.6
+[error] 	    +- org.scalatest:scalatest-core_2.12:3.2.11           (depends on 2.0.1)
+[error] 	    +- org.json4s:json4s-core_2.12:3.5.3                  (depends on 1.0.6)
+[error] 
+[error] 
+[error] this can be overridden using libraryDependencySchemes or evictionErrorLevel
+[error] 	at scala.sys.package$.error(package.scala:30)
+[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:89)
 [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)
 [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)
 [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)
@@ -58,33 +32,11 @@
 [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 [error] 	at java.base/java.lang.Thread.run(Thread.java:833)
-[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-http_2.13:10.1.7
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-http_2.13\10.1.7\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.7/akka-http_2.13-10.1.7.pom
-[error] Error downloading com.typesafe.akka:akka-http-spray-json_2.13:10.1.7
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-http-spray-json_2.13\10.1.7\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.7/akka-http-spray-json_2.13-10.1.7.pom
-[error] Error downloading com.pauldijou:jwt-spray-json_2.13:2.1.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.pauldijou\jwt-spray-json_2.13\2.1.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/pauldijou/jwt-spray-json_2.13/2.1.0/jwt-spray-json_2.13-2.1.0.pom
-[error] Error downloading com.typesafe.akka:akka-stream_2.13:2.5.20
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-stream_2.13\2.5.20\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.5.20/akka-stream_2.13-2.5.20.pom
-[error] Error downloading com.typesafe.akka:akka-testkit_2.13:2.5.20
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-testkit_2.13\2.5.20\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.5.20/akka-testkit_2.13-2.5.20.pom
-[error] Error downloading com.typesafe.akka:akka-http-testkit_2.13:10.1.7
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\sachi\.ivy2\localcom.typesafe.akka\akka-http-testkit_2.13\10.1.7\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_2.13/10.1.7/akka-http-testkit_2.13-10.1.7.pom
+[error] (ssExtractDependencies) found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
+[error] 
+[error] 	* org.scala-lang.modules:scala-xml_2.12:2.0.1 (early-semver) is selected over 1.0.6
+[error] 	    +- org.scalatest:scalatest-core_2.12:3.2.11           (depends on 2.0.1)
+[error] 	    +- org.json4s:json4s-core_2.12:3.5.3                  (depends on 1.0.6)
+[error] 
+[error] 
+[error] this can be overridden using libraryDependencySchemes or evictionErrorLevel
