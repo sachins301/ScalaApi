@@ -18,13 +18,19 @@ object AkkaApi extends App {
     implicit val materializer = ActorMaterializer()
     import system.dispatcher
 
+  val jdbcDao: JdbcDao = new JdbcDao()
 
     val simpleRoute =
-      path("api" / "myEndpoint") {
-        get
+      get {
+        path("api" / "myEndpoint") {
           parameter('stock) { stockname: String =>
-            val jdbcDao: JdbcDao = new JdbcDao()
             complete(HttpResponse(status = StatusCodes.OK, entity = jdbcDao.historicRead(stockname)))
+          }
+        } ~
+          path("api" / "balance"){
+            parameter('userid.as[Int]){ userid: Int =>
+              complete(HttpResponse(status = StatusCodes.OK, entity = jdbcDao.checkBalance(userid)))
+            }
           }
       }
     Http().bindAndHandle(simpleRoute, "localhost", 8080)
